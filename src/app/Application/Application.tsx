@@ -1,0 +1,30 @@
+import React from 'react'
+
+export const Application = () => {
+    return (
+        <section id='application' className='flex-row'>
+            <h3 className='flex-row text-[24px]'>Данные для заявки</h3>
+            <div className='flex justify-between w-full mt-5'>
+                <div className='flex-row'>
+                    <div className='flex'>
+                        <p className='text-[20px] text-gray-600'>Ваше имя*</p>
+                    </div>
+                    <input className='p-[24px] rounded-xl w-[400px] mt-5' type="text" placeholder="Введите ваше имя" name="text"></input>
+                </div>
+                <div className='flex-row'>
+                    <div className='flex'>
+                        <p className='text-[20px] text-gray-600'>Номер телефона*</p>
+                    </div>
+                    <input className='p-[24px] rounded-xl w-[400px] mt-5' type="text" placeholder="Введите номер телефона" name="text"></input>
+                </div>
+                <div className='flex-row'>
+                    <div className='flex'>
+                        <p className='text-[20px] text-gray-600'>Электронная почта</p>
+                    </div>
+                    <input className='p-[24px] rounded-xl w-[400px] mt-5' type="text" placeholder="Введите электронную почту" name="text"></input>
+                </div>
+            </div>
+            <button className='flex-warp bg-red-700 p-5 mt-5 rounded-3xl text-white text-[24px] items-center transition ease-in-out delay-50 hover:bg-slate-700 duration-300'>Оставить заявку</button>
+        </section>
+    )
+}

@@ -1,0 +1,13 @@
+.flexLogo {
+    display: flex;
+	justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    margin-top: 35px;
+}
+.flexLogo1{
+    display: inline-block;
+    color: black;
+    font-size: xx-large;
+    justify-content: flex-start;
+}
