@@ -1,3 +1,4 @@
+'use client'
 import React from 'react'
 import { useState } from 'react';
 import Image from 'next/image';
@@ -7,36 +8,36 @@ const galleries = [
     id: 1,
     title: 'Галерея 1',
     images: [
-      '/images/photo1.jpg',
-      '/images/photo2.jpg',
-      '/images/photo3.jpg',
+      '/image/cake-kid.png',
+      '/image/cake-kid.png',
+      '/image/cake-kid.png',
     ],
   },
   {
     id: 2,
     title: 'Галерея 2',
     images: [
-      '/images/photo4.jpg',
-      '/images/photo5.jpg',
-      '/images/photo6.jpg',
+      '/image/cake-kids.png',
+      '/image/cake-kids.png',
+      '/image/cake-kids.png',
     ],
   },
   {
     id: 3,
     title: 'Галерея 3',
     images: [
-      '/images/photo7.jpg',
-      '/images/photo8.jpg',
-      '/images/photo9.jpg',
+      '/image/cake-party.png',
+      '/image/cake-party.png',
+      '/image/cake-party.png',
     ],
   },
   {
     id: 4,
     title: 'Галерея 4',
     images: [
-      '/images/photo10.jpg',
-      '/images/photo11.jpg',
-      '/images/photo12.jpg',
+      '/image/cake.png',
+      '/image/cake.png',
+      '/image/cake.png',
     ],
   },
 ];

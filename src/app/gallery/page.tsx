@@ -1,7 +1,7 @@
 import React from 'react'
 import { Footer } from '@/components/Footer/Footer';
 import { Logo } from '@/components/Head/Logo';
-import { GalleryButtons } from '../GalleryComponents/GalleryButtons';
+import { GalleryButtons } from '../../components/GalleryComponents/GalleryButtons';
 
 const Portfolio = () => {
   return (
