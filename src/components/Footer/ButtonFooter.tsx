@@ -15,8 +15,8 @@ export const BackButton = () => {
 export const Vk = () => {
     return (
         <button className='bg-white transition ease-in-out delay-50 hover:bg-black border-[1px] border-stone-500 duration-300 w-[48px] h-[48px] rounded-xl group'>
-            <Link className='flex h-[48px] w-[48px]' href="https://vk.com/studiya_iriniya">
-                <svg className='h-[32px] w-[32px] relative left-[6px] top-2' viewBox="0 0 28 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <Link className='flex-row h-[48px] w-[48px]' href="https://vk.com/studiya_iriniya">
+                <svg className='h-[32px] w-[32px] relative left-[6px]' viewBox="0 0 28 16" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path className='fill-current text-black group-hover:text-white duration-300' d="M26.5947 1.08352C26.7791 0.458411 26.5947 0 25.7225 0H22.8333C22.0982 0 21.7622 0.396573 21.5778 0.83213C21.5778 0.83213 20.1088 4.48731 18.0272 6.85733C17.3553 7.54697 17.0483 7.76474 16.6821 7.76474C16.4989 7.76474 16.2328 7.54697 16.2328 6.92186V1.08352C16.2328 0.33339 16.0207 0 15.4081 0H10.8681C10.4096 0 10.1329 0.346833 10.1329 0.677533C10.1329 1.38733 11.1737 1.55134 11.2804 3.55167V7.89111C11.2804 8.84154 11.1131 9.01496 10.7442 9.01496C9.76536 9.01496 7.38337 5.34633 5.96973 1.1467C5.69438 0.330701 5.41639 0.00134486 4.67861 0.00134486H1.79072C0.964671 0.00134486 0.799988 0.397917 0.799988 0.833474C0.799988 1.61586 1.77887 5.48748 5.35974 10.608C7.74699 14.1045 11.1079 16 14.1696 16C16.0049 16 16.2315 15.5792 16.2315 14.8533V12.2104C16.2315 11.3688 16.4067 11.1995 16.9877 11.1995C17.4146 11.1995 18.1497 11.4199 19.8637 13.1044C21.8215 15.102 22.1456 15.9987 23.2457 15.9987H26.1336C26.9583 15.9987 27.3707 15.5779 27.1335 14.7471C26.874 13.9203 25.9386 12.7172 24.6975 11.2936C24.023 10.4816 23.0151 9.6078 22.7082 9.1709C22.28 8.60763 22.4038 8.35893 22.7082 7.85885C22.7095 7.86019 26.2284 2.80289 26.5947 1.08352Z" fill="currentColor"></path>
                 </svg>
             </Link>
@@ -26,7 +26,7 @@ export const Vk = () => {
 
 export const Tel = () => {
     return (
-        <button className='bg-white transition ease-in-out delay-50 hover:bg-black border-[1px] border-stone-500 duration-300 w-[48px] h-[48px] rounded-xl ml-4 group'>
+        <button className='bg-white transition ease-in-out delay-50 hover:bg-black border-[1px] border-stone-500 duration-300 w-[48px] h-[48px] rounded-xl group'>
             <Link className='flex-row h-[48px] w-[48px]' href="tel:+79831710387">
                 <svg className='h-[20px] w-[20px] relative left-[12px]' viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path className='fill-current text-black group-hover:text-white duration-300' d="M18.665 9.23273C18.6902 6.13048 16.1005 3.28675 12.8926 2.89307C12.8284 2.88556 12.7591 2.87376 12.6855 2.86089C12.5242 2.8294 12.3607 2.81146 12.1965 2.80726C11.5383 2.80726 11.3627 3.27924 11.3165 3.55922C11.2713 3.83276 11.3144 4.06339 11.4437 4.24253C11.6614 4.54396 12.0451 4.59759 12.3532 4.6405C12.4426 4.65337 12.5277 4.66517 12.5992 4.68126C15.4823 5.33883 16.4527 6.37184 16.9269 9.28851C16.9385 9.3593 16.9438 9.44727 16.9501 9.54059C16.9711 9.88922 17.0132 10.6144 17.7776 10.6144C17.8406 10.6144 17.91 10.609 17.9815 10.5983C18.6923 10.4878 18.6702 9.82486 18.6597 9.50626C18.6566 9.41616 18.6534 9.33141 18.6618 9.27456C18.6635 9.26033 18.6642 9.24599 18.6639 9.23165L18.665 9.23273Z" fill="#171717"></path>

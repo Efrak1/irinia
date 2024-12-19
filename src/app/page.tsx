@@ -1,8 +1,8 @@
 import React from "react";
-import { Logo } from "@/app/Head/Logo";
-import { Menu } from "@/app/Menu/Menu";
-import { Body } from "./Body/Body";
-import { Footer } from "./Footer/Footer";
+import { Logo } from "@/components/Head/Logo";
+import { Menu } from "@/components/Menu/Menu";
+import { Body } from "../components/Body/Body";
+import { Footer } from "../components/Footer/Footer";
 
 export default function Page() {
   return (

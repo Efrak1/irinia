@@ -1,5 +1,5 @@
-import { Footer } from '@/app/Footer/Footer';
-import { Logo } from '@/app/Head/Logo';
+import { Footer } from '@/components/Footer/Footer';
+import { Logo } from '@/components/Head/Logo';
 import React from 'react'
 
 const Portfolio = () => {

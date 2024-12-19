@@ -1,4 +1,5 @@
 import React from 'react'
+import { motion, useSpring } from "framer-motion"
 
 export const AboutUs = () => {
     return (

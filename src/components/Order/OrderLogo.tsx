@@ -1,5 +1,5 @@
 import React from 'react'
-import { ButtonOrderLogo } from '@/components/ButtonOrder'
+import { ButtonOrderLogo } from '@/components/Order/ButtonOrder'
 
 export const OrderLogo = () => {
     return (

@@ -1,6 +1,6 @@
 import React from 'react'
 import Image from 'next/image'
-import { ButtonLogo1, ButtonLogo2 } from '../../components/ButtonLogo'
+import { ButtonLogo1, ButtonLogo2 } from '../Head/ButtonLogo'
 
 export const Menu = () => {
     return (

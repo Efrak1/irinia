@@ -1,6 +1,6 @@
 import React from 'react'
-import { Range } from '../../components/Range'
-import { ButtonOrder1, ButtonOrder2, ButtonOrder3 } from '@/components/ButtonOrder'
+import { Range } from './Range'
+import { ButtonOrder1, ButtonOrder2, ButtonOrder3 } from '@/components/Order/ButtonOrder'
 
 export const OrderBody = () => {
 
