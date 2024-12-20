@@ -1,0 +1,13 @@
+.decor1 {
+    position: absolute;
+    height: var(--decor-size);
+    width: var(--decor-size);
+    border-radius: var(--decor-size);
+    background: var(--decor-color);
+    bottom: -40px;
+    left: 20%;
+    --decor-size: 200px;
+    --decor-color: #B06300;
+    opacity: .2;
+    transform: translateY(50%);
+}

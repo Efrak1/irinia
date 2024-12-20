@@ -18,7 +18,7 @@ export const Footer = () => {
                         <Link className='text-[18px] p-1 text-teal-600 transition ease-in-out delay-50 hover:text-slate-700 duration-300' href="#about">О Нас</Link>
                     </li>
                     <li>
-                        <Link className='text-[18px] p-1 text-teal-600 transition ease-in-out delay-50 hover:text-slate-700 duration-300' href="/dashboard">Портфолио</Link>
+                        <Link className='text-[18px] p-1 text-teal-600 transition ease-in-out delay-50 hover:text-slate-700 duration-300' href="/gallery">Портфолио</Link>
                     </li>
                     <li>
                         <Link className='text-[18px] p-1 text-teal-600 transition ease-in-out delay-50 hover:text-slate-700 duration-300' href="/#order">Заказать</Link>

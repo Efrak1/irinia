@@ -1,6 +1,8 @@
+'use client'
 import React from 'react'
 import Image from 'next/image'
-import { ButtonLogo1, ButtonLogo2 } from '../Head/ButtonLogo'
+import { ButtonLogo1, ButtonLogo2 } from './ButtonLogo'
+import { CircularMotion, CircularMotion1 } from './MotionMenu'
 
 export const Menu = () => {
     return (
@@ -9,8 +11,8 @@ export const Menu = () => {
                 <h1 className='border-right-8 text-[64px]'>Вкус вашего <br />праздника</h1>
                 <p className='border-right-8 text-[24px]'>Авторская работа и индивидуальный подход<br />к каждому торту в Барнауле</p>
                 <span className='flex gap-5'>
-                    <ButtonLogo1/>
-                    <ButtonLogo2/>
+                    <ButtonLogo1 />
+                    <ButtonLogo2 />
                 </span>
             </div>
             <Image
@@ -20,6 +22,10 @@ export const Menu = () => {
                 height={665}
                 alt="не робит епта"
             />
+            <div>
+                <CircularMotion />
+                <CircularMotion1 />
+            </div>
         </section>
     )
 }
