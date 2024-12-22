@@ -10,17 +10,17 @@ import { Navigation, Pagination } from 'swiper/modules';
 export const SwiperBody = () => {
     return (
 
-        <section className='p-20 flex-col items-center relative'>
+        <section className='p-20 flex-col items-center relative right-[6%]'>
             <Swiper
                 modules={[Navigation, Pagination]}
                 navigation={{
                     prevEl: '.custom-prev',
                     nextEl: '.custom-next',
                 }}
-                className='w-[100vw] absolute'
+                className='w-[100vw] absolute '
                 pagination={{ clickable: true }}
-                spaceBetween={50}
-                // slidesPerView={1.2}
+                spaceBetween={80}
+                slidesPerView={1.5}
                 onSwiper={(swiper) => console.log(swiper)}
             >
                 <SwiperSlide className='p-10  max-w-[900px]'>
@@ -88,7 +88,7 @@ export const SwiperBody = () => {
                     </nav>
                 </SwiperSlide>
             </Swiper>
-            <div className="flex justify-center mt-3">
+            <div className="flex justify-center mt-3 relative left-[8%]">
                 <button className="custom-prev bg-black text-white rounded-[70px] w-[70px] h-[70px] text-[24px] cursor-pointer flex justify-center items-center p-[30px] mr-7">&#10094;</button>
                 <button className="custom-next bg-black text-white rounded-[70px] w-[70px] h-[70px] text-[24px] cursor-pointer flex justify-center items-center p-[30px] ml-7">&#10095;</button>
             </div>
