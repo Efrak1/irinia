@@ -15,8 +15,8 @@ export const Modal: React.FC<{ isModalOpen: boolean; onClose: () => void }> = ({
                         className="bg-white rounded-lg p-6 shadow-lg w-[850px]"
                         initial={{ scale: 0.7 }} // Начальный масштаб
                         animate={{ scale: 1 }} // Конечный масштаб
-                        exit={{ scale: 0.8 }} // Масштаб при выходе
-                        transition={{ duration: 0.4 }} // Время анимации
+                        exit={{ scale: 0.7, opacity: 0 }} // Масштаб при выходе
+                        transition={{ duration: 0.3}} // Время анимации
                     >
                         <div className='flex flex-row justify-between'>
                             <h3 className='flex justify-start text-[32px]'>Быстрая заявка</h3>

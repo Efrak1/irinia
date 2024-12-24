@@ -3,8 +3,12 @@ import React from "react";
 import { motion } from "framer-motion";
 import { Logo } from "@/components/Head/Logo";
 import { Menu } from "@/components/Menu/Menu";
-import { Body } from "../components/Body/Body";
 import { Footer } from "../components/Footer/Footer";
+import { AboutUs } from "@/components/AboutUs/AboutUs";
+import { Application } from "@/components/Application/Application";
+import { Order } from "@/components/Order/Order";
+import { Swiper } from "@/components/Swiper/Swiper";
+
 
 export default function Page() {
   return (
@@ -16,7 +20,10 @@ export default function Page() {
     >
       <Logo />
       <Menu />
-      <Body />
+      <AboutUs />
+      <Swiper />
+      <Order />
+      <Application />
       <Footer />
     </motion.div>
   );

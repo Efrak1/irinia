@@ -16,12 +16,12 @@ export const ButtonOrder1 = () => {
     ];
 
     return (
-        <div className='flex flex-wrap w-full'>
+        <div className='flex flex-col sm:flex-row flex-wrap w-full sm:w-auto'>
             {buttonLabels.map((label, index) => {
                 // Определяем классы для кнопки в зависимости от ее состояния
                 const buttonClasses = activeButtonIndex === index
-                    ? 'flex items-center justify-center text-[20px] text-white bg-red-900 rounded-2xl mt-4 mr-2 p-4' // Активная кнопка
-                    : 'flex items-center justify-center text-[20px] text-black rounded-2xl mt-4 mr-2 p-4'; // Неактивные кнопки
+                    ? 'flex items-center justify-center text-[18px] sm:text-[20px] text-white bg-red-900 rounded-2xl mt-4 mr-2 p-4' // Активная кнопка
+                    : 'flex items-center justify-center text-[18px] sm:text-[20px] text-black rounded-2xl mt-4 mr-2 p-4'; // Неактивные кнопки
 
                 return (
                     <button
@@ -61,11 +61,11 @@ export const ButtonOrder2 = () => {
     ];
 
     return (
-        <div className='flex flex-wrap w-full'>
+        <div className='flex sm:flex-row flex-col sm:flex-wrap w-full'>
             {buttonLabels.map((label, index) => {
                 const buttonClasses = activeButtonIndex === index
-                    ? 'flex items-center justify-center text-[20px] text-white bg-red-900 rounded-2xl mt-4 mr-2 p-4' // Активная кнопка
-                    : 'flex items-center justify-center text-[20px] text-black rounded-2xl mt-4 mr-2 p-4'; // Неактивные кнопки
+                    ? 'flex items-center justify-center text-[18px] sm:text-[20px] text-white bg-red-900 rounded-2xl mt-4 mr-2 p-4' // Активная кнопка
+                    : 'flex items-center justify-center text-[18px] sm:text-[20px] text-black rounded-2xl mt-4 mr-2 p-4'; // Неактивные кнопки
 
                 return (
                     <div key={index}>
@@ -101,11 +101,11 @@ export const ButtonOrder3 = () => {
     ];
 
     return (
-        <div className='flex flex-wrap w-full'>
+        <div className='flex flex-col sm:flex-row sm:flex-wrap w-full'>
             {buttonLabels.map((label, index) => {
                 const buttonClasses = activeButtonIndex === index
-                    ? 'flex items-center justify-center text-[20px] text-white bg-red-900 rounded-2xl mt-4 mr-2 p-4' // Активная кнопка
-                    : 'flex items-center justify-center text-[20px] text-black rounded-2xl mt-4 mr-2 p-4'; // Неактивные кнопки
+                    ? 'flex text-start sm:items-center sm:justify-center text-[18px] sm:text-[20px] text-white bg-red-900 rounded-2xl mt-4 mr-2 p-4' // Активная кнопка
+                    : 'flex text-start sm:items-center sm:justify-center text-[18px] sm:text-[20px] text-black rounded-2xl mt-4 mr-2 p-4'; // Неактивные кнопки
 
                 return (
                     <button
@@ -130,42 +130,6 @@ const SvgButtonOrder2 = () => {
     )
 }
 
-// export const ButtonOrderLogo = () => {
-
-//     const [activeButtonIndex, setActiveButtonIndex] = useState<number>(0);
-
-//     const handleButtonClick = (index: number) => {
-//         setActiveButtonIndex(index);
-//     };
-
-//     const buttonLabels = [
-//         'Собрать торт',
-//         'Заказать звонок'
-//     ];
-
-//     return (
-//         <div className='flex w-full'>
-//             {buttonLabels.map((label, index) => {
-//                 // Определяем классы для кнопки в зависимости от ее состояния
-//                 const buttonClasses = activeButtonIndex === index
-//                     ? 'flex items-center justify-center text-[20px] text-white bg-red-900 rounded-2xl mt-4 mr-2 p-4' // Активная кнопка
-//                     : 'flex items-center justify-center text-[20px] text-black rounded-2xl mt-4 mr-2 p-4'; // Неактивные кнопки
-
-//                 return (
-//                     <button
-//                         key={index}
-//                         onClick={() => handleButtonClick(index)}
-//                         className={buttonClasses} // Используем определенные классы
-//                     >
-//                         {activeButtonIndex === index}
-//                         {label}
-//                     </button>
-//                 );
-//             })}
-//         </div>
-//     );
-// };
-
 export const ButtonOrderLogo = () => {
     const [activeButtonIndex, setActiveButtonIndex] = useState<number>(0);
     const [isElementVisible, setIsElementVisible] = useState<boolean>(true); // Состояние для управления видимостью элемента
@@ -186,11 +150,11 @@ export const ButtonOrderLogo = () => {
     ];
 
     return (
-        <div className='flex w-full'>
+        <div className='flex w-full flex-col sm:flex-row'>
             {buttonLabels.map((label, index) => {
                 const buttonClasses = activeButtonIndex === index
-                    ? 'flex items-center justify-center text-[20px] text-white bg-red-900 rounded-2xl mt-4 mr-2 p-4' // Активная кнопка
-                    : 'flex items-center justify-center text-[20px] text-black rounded-2xl mt-4 mr-2 p-4'; // Неактивные кнопки
+                    ? 'items-center text-[18px] sm:text-[20px] w-full sm:w-auto text-white bg-red-900 rounded-2xl mt-4 mr-2 p-4' // Активная кнопка
+                    : 'items-center text-[18px] sm:text-[20px] w-full sm:w-auto text-black rounded-2xl mt-4 mr-2 p-4'; // Неактивные кнопки
 
                 return (
                     <button
@@ -202,12 +166,6 @@ export const ButtonOrderLogo = () => {
                     </button>
                 );
             })}
-
-            {isElementVisible && (
-                <div className='mt-4'>
-                    <p>Здесь может быть любая дрянь.</p>
-                </div>
-            )}
         </div>
     );
 };

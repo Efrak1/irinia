@@ -3,17 +3,17 @@ import React from 'react'
 
 export const ButtonLogo1 = () => {
   return (
-    <button className='transition ease-in-out delay-50 hover:bg-slate-700 duration-300 w-[200px] h-[70px] bg-stone-800 rounded-2xl'>
-        <Link href='/#application' className='text-white text-[24px]'>Сделать заказ</Link>
+    <button className='transition ease-in-out delay-50 hover:bg-slate-700 duration-300 w-full h-[60px] sm:w-[200px] sm:h-[70px] bg-stone-800 rounded-3xl'>
+        <Link href='/#application' className='text-white text-[20px] sm:text-[24px]'>Сделать заказ</Link>
     </button>
   )
 }
 //   
 export const ButtonLogo2 = () => {
   return (
-    <button className='transition ease-in-out delay-50 hover:bg-slate-200 duration-300 flex justify-center items-center p-3 bg-white rounded-2xl w-[380px] h-[70px]'>
+    <button className='transition ease-in-out delay-50 hover:bg-slate-200 duration-300 flex justify-center items-center p-3 bg-white rounded-3xl w-full h-[60px] sm:w-[380px] sm:h-[70px]'>
             <SvgLogoButton/>
-            <Link href='/#swiper' className='text-[24px] text-slate-800'>Какие торты мы делаем?</Link>
+            <Link href='/#swiper' className='text-[20px] sm:text-[24px] text-slate-800'>Какие торты мы делаем?</Link>
         </button>
   )
 }

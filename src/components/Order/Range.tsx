@@ -38,24 +38,24 @@ export const Range = () => {
     const isSlider1Enabled = checkConditions();
 
     return (
-        <section className='flex justify-between mt-3'>
+        <section className='flex flex-col sm:flex-row sm:justify-between mt-3'>
             <div className='flex-row'>
                 <div className='flex max-w-500'>
-                    <p className='text-[20px] text-slate-400'>Количество ярусов (Выбрано: {slider1Value})</p>
+                    <p className='text-[16px] sm:text-[20px] text-slate-400'>Количество ярусов (Выбрано: {slider1Value})</p>
                 </div>
-                <input className='flex w-[400px] h-5' type="range" name="range" min="1" max="3" value={slider1Value} onChange={handleSlider1Change} disabled={!isSlider1Enabled} />
+                <input className='flex w-[250px] sm:w-[400px] h-5' type="range" name="range" min="1" max="3" value={slider1Value} onChange={handleSlider1Change} disabled={!isSlider1Enabled} />
             </div>
             <div className='flex-row'>
                 <div className='flex max-w-500'>
-                    <p className='text-[20px] text-slate-400'>Дети (Выбрано: {slider2Value})</p>
+                    <p className='text-[16px] sm:text-[20px] text-slate-400'>Дети (Выбрано: {slider2Value})</p>
                 </div>
-                <input className='flex w-[400px] h-5' type="range" name="range" min="0" max="30" value={slider2Value} onChange={handleSlider2Change} />
+                <input className='flex w-[250px] sm:w-[400px] h-5' type="range" name="range" min="0" max="30" value={slider2Value} onChange={handleSlider2Change} />
             </div>
             <div className='flex-row'>
                 <div className='flex max-w-500'>
-                    <p className='text-[20px] text-slate-400'>Взрослые (Выбрано: {slider3Value})</p>
+                    <p className='text-[16px] sm:text-[20px] text-slate-400'>Взрослые (Выбрано: {slider3Value})</p>
                 </div>
-                <input className='flex w-[400px] h-5' type="range" name="range" min="0" max="30" value={slider3Value} onChange={handleSlider3Change} />
+                <input className='flex w-[250px] sm:w-[400px] h-5' type="range" name="range" min="0" max="30" value={slider3Value} onChange={handleSlider3Change} />
             </div>
         </section >
     )
