@@ -13,7 +13,7 @@ export const Portfolio = () => {
       exit={{ opacity: 0, y: 20 }}
       transition={{ duration: 0.5 }}
     >
-      <section id='portfolio' className='mt-16'>
+      <section id='portfolio' className='mt-32'>
         <h2 className='text-[32px] flex justify-center items-center w-full h-[32px] mb-4'>Галерея</h2>
         <GalleryButtons />
       </section>
