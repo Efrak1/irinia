@@ -53,7 +53,7 @@ export const CircularMotion = () => {
                 initial={{ x: 0, y: 0 }}
                 animate={controls}
                 transition={{ duration: 0.1 }}
-                className='absolute top-[13%] left-[90%] w-[50px] h-[50px]'
+                className='absolute top-[13%] left-[80%] sm:left-[90%] w-[50px] h-[50px]'
                 style={{
                     backgroundColor: 'darkcyan',
                     borderRadius: '50%',
