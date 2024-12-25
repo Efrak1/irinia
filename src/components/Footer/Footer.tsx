@@ -6,7 +6,7 @@ import { MobileFooter } from './MobileFooter'
 export const Footer = () => {
     return (
         <>
-            <div className='sm:flex hidden'>
+            <div className='sm:flex hidden p-10'>
                 <section id='footer' className='grid-cols-3 grid mt-12'>
                     <div className='flex-row justify-between'>
                         <Link href='/#logo' className='flex text-[32px] items-start'>Ириния</Link>

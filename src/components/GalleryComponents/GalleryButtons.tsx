@@ -49,19 +49,19 @@ export const GalleryButtons = () => {
     const [activeGallery, setActiveGallery] = useState<number>(galleries[0].id);
 
     return (
-        <div className="flex flex-col items-center h-full">
-            <div className="flex space-x-4 mb-6">
-                {galleries.map((gallery, index) => {
+        <div className="flex flex-col items-center h-full p-4">
+            <div className="flex flex-wrap justify-center space-x-2 mb-6">
+                {galleries.map((gallery) => {
                     const buttonClasses =
                         activeGallery === gallery.id
-                            ? 'flex items-center justify-center text-[20px] text-white bg-red-900 rounded-2xl mt-4 mr-2 p-4 duration-300' // Активная кнопка
-                            : 'flex items-center justify-center text-[20px] text-black rounded-2xl mt-4 mr-2 p-4'; // Неактивные кнопки
+                            ? 'flex items-center justify-center text-[16px] sm:text-[20px] text-white bg-red-900 rounded-2xl mt-2 mr-2 p-3 duration-300' // Активная кнопка
+                            : 'flex items-center justify-center text-[16px] sm:text-[20px] text-black rounded-2xl mt-2 mr-2 p-3'; // Неактивные кнопки
 
                     return (
                         <button
                             key={gallery.id}
                             onClick={() => setActiveGallery(gallery.id)}
-                            className={buttonClasses}
+                            className={buttonClasses + ' flex flex-col sm:flex-row w-full sm:w-auto justify-center'}
                         >
                             {gallery.title}
                         </button>
@@ -70,21 +70,21 @@ export const GalleryButtons = () => {
             </div>
 
             {activeGallery && (
-                <div className="grid grid-cols-6 gap-4">
+                <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-4 w-full">
                     {galleries
                         .find((gallery) => gallery.id === activeGallery)
                         ?.images.map((image, index) => (
-                    <div key={index} className="w-full h-auto flex flex-warp justify-center items-center duration-500">
-                        <Image
-                            src={image}
-                            alt={'Image ${index + 1}'}
-                            objectFit="cover"
-                            className="rounded-lg"
-                            width={300}
-                            height={300}
-                        />
-                    </div>
-            ))}
+                            <div key={index} className="w-full h-auto flex justify-center items-center duration-500">
+                                <Image
+                                    src={image}
+                                    alt='хз'
+                                    objectFit="cover"
+                                    className="rounded-lg"
+                                    width={300}
+                                    height={300}
+                                />
+                            </div>
+                        ))}
                 </div>
             )}
         </div>

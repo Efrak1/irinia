@@ -17,7 +17,7 @@ export const SwiperBody = () => {
                     prevEl: '.custom-prev',
                     nextEl: '.custom-next',
                 }}
-                className='w-[100vw] relative right-[3%]'
+                className='w-[95vw] relative right-[3%]'
                 pagination={{ clickable: true }}
                 spaceBetween={80}
                 slidesPerView={1.5}
@@ -28,7 +28,7 @@ export const SwiperBody = () => {
                         <div className='flex-col sm:flex-row'>
                             <h3 className='text-[36px]'>Детские торты</h3>
                             <p className='text-xl'>Детские торты - не просто сладости, а <br />источники радости и вдохновения. Как выбрать <br />торт, который станет украшением праздника?</p>
-                            <Link href="/dashboard"><button className='bg-red-700 w-36 h-10 rounded-xl mt-[60px] text-white'>Примеры работ</button></Link>
+                            <Link href="/gallery#1"><button className='bg-red-700 w-36 h-10 rounded-xl mt-[60px] text-white'>Примеры работ</button></Link>
                         </div>
                         <Image
                             className='flex-row'
@@ -44,7 +44,7 @@ export const SwiperBody = () => {
                         <div className='flex-row'>
                             <h3 className='text-[36px]'>Праздничные торты</h3>
                             <p className='text-xl'>Уникальные десерты для любого торжества, которые будут долго запоминаться своей неповторимостью и изысканным вкусом.</p>
-                            <Link href="/dashboard"><button className='bg-red-700 w-36 h-10 rounded-xl mt-[60px] text-white'>Примеры работ</button></Link>
+                            <Link href="/gallery#2"><button className='bg-red-700 w-36 h-10 rounded-xl mt-[60px] text-white'>Примеры работ</button></Link>
                         </div>
                         <Image
                             className='flex-row'
@@ -60,7 +60,7 @@ export const SwiperBody = () => {
                         <div className='flex-row'>
                             <h3 className='text-[24px] sm:text-[36px]'>Свадебные торты</h3>
                             <p className='text-[16px] sm:text-xl'>Мы создаем свадебные торты, которые отражают вашу индивидуальность и стиль, чтобы этот день запомнился навсегда.</p>
-                            <Link href="/dashboard"><button className='bg-red-700 w-36 h-10 rounded-xl mt-[60px] text-white'>Примеры работ</button></Link>
+                            <Link href="/gallery#3"><button className='bg-red-700 w-36 h-10 rounded-xl mt-[60px] text-white'>Примеры работ</button></Link>
                         </div>
                         <Image
                             className='flex-row'
@@ -76,7 +76,7 @@ export const SwiperBody = () => {
                         <div className='flex-row'>
                             <h3 className='text-[24px] sm:text-[36px]'>Корпоративные торты</h3>
                             <p className='text-[16px] sm:text-xl'>Наши десерты будут радовать вас и ваших коллег на любом мероприятии, будь то юбилей, запуск нового продукта или другое важное событие.</p>
-                            <Link href="/dashboard"><button className='bg-red-700 w-36 h-10 rounded-xl mt-[60px] text-white'>Примеры работ</button></Link>
+                            <Link href="/gallery#4"><button className='bg-red-700 w-36 h-10 rounded-xl mt-[60px] text-white'>Примеры работ</button></Link>
                         </div>
                         <Image
                             className='flex-row'

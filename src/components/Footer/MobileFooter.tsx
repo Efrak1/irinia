@@ -3,7 +3,7 @@ import Link from 'next/link'
 
 export const MobileFooter = () => {
     return (
-        <>
+        <div className='p-5'>
             <hr className='p-5 mt-5' />
             <section className='flex flex-col justify-start'>
                 <Link href='/#logo' className='flex text-[24px] items-start'>Ириния</Link>
@@ -54,6 +54,6 @@ export const MobileFooter = () => {
                     Политика конфиденциальности
                 </Link>
             </section>
-        </>
+        </div>
     )
 }

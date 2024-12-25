@@ -4,10 +4,12 @@ import Link from 'next/link'
 export const BackButton = () => {
     return (
         <div>
-            <button className='flex items-center bg-red-800 p-5 w-[180px] max-h-[48px] rounded-2xl transition ease-in-out delay-50 hover:bg-slate-700 duration-300'>
-                <Link className='flex-row text-[20px] text-white' href="/#logo">Вернуться</Link>
+
+            <Link className='flex-row text-[20px] text-white group-hover:bg-stone-700 duration-300' href="/#logo">
+                <button className='flex items-center bg-red-800 p-5 w-[180px] max-h-[48px] rounded-2xl transition ease-in-out delay-50 hover:bg-slate-700 duration-300'>Вернуться</button>
                 <SvgBackButton />
-            </button>
+            </Link>
+
         </div>
     )
 }
@@ -40,7 +42,7 @@ export const Tel = () => {
 const SvgBackButton = () => {
     return (
         <div className='flex justify-center max-w-4 max-h-4'>
-            <svg className='relative top-[5px] left-5'>
+            <svg viewBox="0 0 13 7" className='relative left-[130px] bottom-8 w-4 h-4'>
                 <path d="M0.410034 5.53516L5.63269 0.53125C5.79675 0.394531 5.96082 0.3125 6.12488 0.3125C6.28894 0.3125 6.42566 0.367188 6.56238 0.476562L11.785 5.48047C12.0585 5.75391 12.0585 6.16406 11.8124 6.41016C11.5663 6.68359 11.1561 6.68359 10.8827 6.4375L6.12488 1.89844L1.31238 6.49219C1.06628 6.73828 0.628784 6.73828 0.38269 6.46484C0.136597 6.19141 0.136597 5.78125 0.410034 5.53516Z" fill="#FFFEE6"></path>
             </svg>
         </div>

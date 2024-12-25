@@ -1,6 +1,5 @@
-import Link from 'next/link'
+'use client'
 import React from 'react'
-import style from '../style/Logo.module.css'
 import { Navigation } from '@/components/Head/Navigation'
 import { MobileNavigation } from './MobileNavigation'
 

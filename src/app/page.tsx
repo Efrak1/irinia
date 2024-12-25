@@ -1,7 +1,6 @@
 'use client'
 import React from "react";
 import { motion } from "framer-motion";
-import { Logo } from "@/components/Head/Logo";
 import { Menu } from "@/components/Menu/Menu";
 import { Footer } from "../components/Footer/Footer";
 import { AboutUs } from "@/components/AboutUs/AboutUs";
@@ -18,7 +17,6 @@ export default function Page() {
       exit={{ opacity: 0, y: 20 }}
       transition={{ duration: 0.5 }}
     >
-      <Logo />
       <Menu />
       <AboutUs />
       <Swiper />
