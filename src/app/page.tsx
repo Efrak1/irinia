@@ -2,7 +2,7 @@
 import React from "react";
 import { motion } from "framer-motion";
 import { Menu } from "@/components/Menu/Menu";
-import { Footer } from "../components/Footer/Footer";
+// import { Footer } from "../components/Footer/Footer";
 import { AboutUs } from "@/components/AboutUs/AboutUs";
 import { Application } from "@/components/Application/Application";
 import { Order } from "@/components/Order/Order";
@@ -22,7 +22,7 @@ export default function Page() {
       <Swiper />
       <Order />
       <Application />
-      <Footer />
+      {/* <Footer /> */}
     </motion.div>
   );
 }

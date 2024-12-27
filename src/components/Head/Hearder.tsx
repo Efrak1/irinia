@@ -3,7 +3,7 @@ import React from 'react'
 import { Navigation } from '@/components/Head/Navigation'
 import { MobileNavigation } from './MobileNavigation'
 
-export const Logo: React.FC = () => {
+export const Hearder: React.FC = () => {
   return (
     <header id='logo'>
       <div className='sm:flex hidden'>
