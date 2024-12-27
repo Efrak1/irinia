@@ -1,6 +1,5 @@
 'use client'
 import React from 'react'
-import { Footer } from '@/components/Footer/Footer';
 import { GalleryButtons } from '../../components/GalleryComponents/GalleryButtons';
 import { Fast } from '@/components/GalleryComponents/Fast';
 import { motion } from "framer-motion";
@@ -19,7 +18,6 @@ export const Portfolio = () => {
       </section>
       <Fast />
       <hr className='mt-[40px] p-5' />
-      <Footer />
     </motion.div>
   );
 };
